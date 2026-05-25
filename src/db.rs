@@ -1,7 +1,6 @@
-use postgrest::Postgrest;
-
-pub fn get_client() -> Postgrest {
-    Postgrest::new("https://vhvdozrnxhcfvzlacroi.supabase.co")
+pub fn get_client() -> 
+Postgrest {
+    Postgrest::new("https://vhvdozrnxhcfvzlacroi.supabase.co/rest/v1")
         .insert_header("apikey", "sb_publishable_Veg-AzIFmgH-1NH1m-yXUA_qqevWfay")
         .insert_header("Authorization", "Bearer sb_publishable_Veg-AzIFmgH-1NH1m-yXUA_qqevWfay")
 }
